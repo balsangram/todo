@@ -18,7 +18,7 @@ function Login() {
 
     try {
       // Send POST request to backend API endpoint
-      const response = await axios.post(`http://localhost:8000/user/login`, {
+      const response = await axios.post(`wss://localhost:8000/user/login`, {
         email,
         password,
       });
