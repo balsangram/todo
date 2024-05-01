@@ -18,7 +18,7 @@ function MyTodo() {
     } else {
       if (id) {
         await axios
-          .post(`http://localhost:8000/user/add`, {
+          .post(`wss://localhost:8000/user/add`, {
             body: inputs.body, // Corrected from InputDeviceInfo.body to inputs.body
             id: id,
           })
@@ -36,7 +36,7 @@ function MyTodo() {
   useEffect(() => {
     const fetch = async () => {
       await axios
-        .get(`http://localhost:8000/user/getTask/${id}`)
+        .get(`wss://localhost:8000/user/getTask/${id}`)
         .then((response) => {
           setArray(response.data.list);
         });
