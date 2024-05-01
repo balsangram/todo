@@ -24,7 +24,7 @@ function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(user);
-    axios.post(`http://localhost:8000/user/register`, user).then((result) => {
+    axios.post(`wss://localhost:8000/user/register`, user).then((result) => {
       if (result.data.message === "User Already Exist") {
         alert(result.data.message);
       } else {
