@@ -101,7 +101,7 @@ function Register() {
             </div>
           </form>
           <Link
-            className="mx-4 my-6 bg-blue-400 p-3 px-[3.7rem] rounded-full hover:bg-blue-800 hover:text-white "
+            className=""
             to="/"
           >
             Login
